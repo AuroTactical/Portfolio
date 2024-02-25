@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a senior Roblox Lua developer and junior Python developer. I specialize in creating engaging gameplay experiences and have a passion for learning new technologies.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Work</h2>
+        <p>Here are some of the projects I've worked on:</p>
+        <ul>
+            <li>
+                <p><strong>Project 1:</strong></p>
+                <p>Description of project 1</p>
+                <img src="img/AdminPanelUI.png" alt="Project 1 Screenshot" class="project-image"> <!-- Added class for image -->
+            </li>
+        </ul>
+    </section>
+
+    <section id="pricing" class="pricing-section mega-pack">
+        <h2>Mega Pack</h2>
+        <p>- 8 Frames</p>
+        <p>- 7 Day Delivery</p>
+        <p><strong>1200 Robux</strong></p>
+    </section>
+    
+    <section id="pricing" class="pricing-section premium-pack">
+        <h2>Premium Pack</h2>
+        <p>- 4 Frames</p>
+        <p>- 14 Day Delivery</p>
+        <p><strong>600 Robux</strong></p>
+    </section>
+    
+    <section id="pricing" class="pricing-section standard-pack">
+        <h2>Standard Pack</h2>
+        <p>- 2 Frames</p>
+        <p>- 30 Day Delivery</p>
+        <p><strong>250 Robux</strong></p>
+    </section>
+    
+    <section id="Bottom">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AuroTactical</p>
+    </footer>
+    
+    <!-- Loading animation -->
+    <div class="loader"></div> <!-- Added loader element -->
+    
+    <script>
+        // JavaScript for loading animation
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden"; // Hide loader when the page loads
+        });
+    </script>
+</body>
+</html>

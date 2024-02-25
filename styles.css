@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(31, 31, 31, 0.5); /* Dark gray background with 50% transparency */
+    color: #fff; /* Light text color */
+    margin: 0; /* Remove default margin */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    padding-bottom: 60px; /* Add padding to the bottom to accommodate the fixed footer */
+}
+
+
+/* Header Styles */
+header {
+    background-color: #2c3e50; /* Dark blue-gray background for header */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow effect */
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    background-color: #2c3e50; /* Semi-transparent fire red background for sections */
+    margin: 20px auto; /* Center the section horizontally */
+    border-radius: 10px;
+    box-shadow: 0 0 20px #2c3e50; /* Stronger shadow effect */
+    max-width: 800px; /* Limit section width */
+    animation: fadeInSection 2s ease; /* Animation for section load */
+}
+
+/* Footer Styles */
+footer {
+    background: #34495e; /* Dark blue-gray background for footer */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Heading Styles */
+h1, h2 {
+    margin-top: 20px;
+    font-size: 42px; /* Larger font size for headings */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 32px; /* Larger font size for section headings */
+    color: #ffffff; /* Fire red color for section headings */
+}
+
+/* Paragraph Styles */
+p {
+    margin-top: 10px;
+    font-size: 20px; /* Larger font size for paragraphs */
+    line-height: 1.8; /* Increased line height */
+}
+
+/* Image Styles */
+.project-image {
+    max-width: 100%; /* Ensure image does not exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent extra space below image */
+    margin: 20px auto; /* Center the image horizontally with more margin */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect for images */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.project-image:hover {
+    transform: scale(1.05); /* Enlarge image on hover */
+}
+
+/* Loading Animation Styles */
+.loader {
+    border: 8px solid #f3f3f3; /* Light gray border */
+    border-top: 8px solid #3498db; /* Blue border */
+    border-radius: 50%; /* Circular border */
+    width: 50px; /* Loader width */
+    height: 50px; /* Loader height */
+    animation: spin 2s linear infinite; /* Spin animation */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center loader */
+    z-index: 9999; /* Ensure loader appears on top */
+}
+
+.hidden {
+    display: none; /* Hide the loader */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; } /* Initially hidden */
+    100% { opacity: 1; } /* Fully visible */
+}
+
+@keyframes fadeInSection {
+    0% { opacity: 0; transform: translateY(20px); } /* Initially hidden and slightly moved */
+    100% { opacity: 1; transform: translateY(0); } /* Fully visible and centered */
+}
